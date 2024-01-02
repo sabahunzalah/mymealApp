@@ -1,0 +1,231 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+ 
+}
+.app-container {
+  background-color: #e9e9e9;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 11px;
+  font-size: 23px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+  /* border: 2px solid black; */
+}
+
+.searchBar input {
+  width: 300px;
+  height: 11px;
+  padding: 15.8px;
+  outline: none;
+  border-radius: 33px;
+  border: 1px solid rgb(53, 53, 53);
+  font-size: 18px;
+}
+
+.searchBar button {
+  width: 60px;
+  height: 33px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  margin-left: -33px;
+  font-size: 17px;
+  border: none;
+  color: white;
+  background-color: orangered;
+}
+
+.category {
+  width: 550px;
+  height: 120px;
+  position: relative;
+  /* background-color: rgb(86, 71, 71); */
+  overflow: hidden;
+  margin: auto;
+  margin-top: 15px;
+  /* border: 2px solid black; */
+}
+
+.category .dishes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  margin: auto;
+  transition: all 1s ease;
+}
+
+.dishes input {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(0, 149, 225);
+  font-size: 18px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+}
+
+.dishes input:hover {
+  background-color: rgb(215, 212, 212);
+  color: black;
+  cursor: pointer;
+}
+
+.category button {
+  position: relative;
+  top: 32px;
+  background-color: transparent;
+  font-size: 33px;
+  border: none;
+  /* border: 2px solid black; */
+}
+.category button:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+#nextBtn {
+  margin-left: 88%;
+}
+
+#prevBtn {
+  padding: 3px;
+  /* margin-left: 3%; */
+  /* margin-bottom: 2px; */
+}
+
+.mealPicture {
+  width: 370px;
+}
+.showMeal .modal {
+height: 100%;
+width: 100%;
+position: absolute;
+}
+.showMeal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+.showMeal .card {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 20px;
+  margin-top: 22px;
+  padding-bottom: 22px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.card p {
+  margin-top: 11px;
+}
+.card button {
+  width: 150px;
+  height: 80px;
+  padding: 5px;
+  border-radius: 22px;
+  background-color: orangered;
+  color: white;
+  margin-top: 11px;
+  border: none;
+  font-size: 15px;
+}
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-modal {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.close-btn {
+  cursor: pointer;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+
+@media screen and (max-width:640px) {
+  .category{
+    width: 90%;
+  }
+}
+@media screen and (max-width:580px) {
+  .category{
+    width: 90%;
+  }
+}
+@media screen and (max-width:500px) {
+  .category input{
+    width: 75px;
+  }
+  .searchBar input{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:370px) {
+  .category input{
+    width: 50px;
+    font-size: 14px;
+  }
+ #nextBtn{
+  left: 74%;
+ }
+}
